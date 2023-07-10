@@ -61,7 +61,7 @@ namespace EmbeddedProto
 #elif __cplusplus >= 201103L // C++11
 
   template<class T>
-  constexpr void destroy_at(T* p) 
+  inline void destroy_at(T* p)
   {
     p->~T(); 
   }
