@@ -33,6 +33,6 @@ jobs:
     - name: Setup venv
       run: python setup.py
     - name: Build test
-      run: ./build_test.sh
+      run: ./test/scripts/build_test.py
     - name: Code coverage
-      run: ./code_coverage.sh
+      run: ./test/scripts/code_coverage.py
